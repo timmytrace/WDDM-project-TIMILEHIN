@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WDDM 114 - Lecture 3</title>
+        <h1 class="para">Multiple elements</h1>
+        <h2 class="para">Specific classes</h2>
+        <h3>Header 3</h3>
+        <p class="para">This is paragraph one</p>
+        <p class="para">This is paragraph two</p>
+        <p class="para">This is paragraph three</p>
+
+        <div class="warning">
+            <p>This <em>is</em> inside warning</p>
+        </div>
+    </head>
+    <body>
+        <script>
+            //Get all the paragraph elements using querySelectorAll
+            var paraElements = document.querySelectorAll("h2.para")
+
+            //Use a for loop to iterate through all elements
+            //Start at 0
+            //Go to the end of the array
+            //Iterate each one to get to the end of the array
+            for(var i = 0; i < paraElements.length; i++) {
+               // paraElements[i].style.backgroundColor = "red"
+            }
+        </script>
+
+        <style>
+            /*Grouping selectors*/
+
+            h1 { 
+                /*Relative units*/
+                font-size: 2em;
+            }
+
+            h2 {
+                /*Fixed units*/
+                font-size: 12pt;
+            }
+
+            h3 {
+                /*Relative units*/
+                font-size: 200%;
+            }
+
+            p {
+            /*Fixed units*/
+                background-color: red;
+                font-size: 16px;
+            }
+            /*Contextual  selectors*/
+            .warning p {
+                border: solid;
+                /*Relative units*/
+                height: 20vh; 
+                width: 50vw;
+            }
+
+ /*
+            h2.para {
+                background-color: brown;
+            }
+            .para {
+                background-color: blue;
+            }
+            */
+        </style>
+    </body>
+</html>

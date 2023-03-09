@@ -1,0 +1,9 @@
+{
+  "name": "Timilehin",
+  "age": 10,
+  "spouse": null,
+  "favoriteActivity": ["Football", " Reading", " Dancing"],
+  "favoriteColors": ["Blue", " Black", " White"],
+  "weeklyExpense": [ "Food", " Car"," Rent"],
+  "contactNumber": 12387465
+}
